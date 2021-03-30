@@ -20,6 +20,7 @@ class AddContact : AppCompatActivity() {
             var new = User(contactName.text.toString(),phoneNumber.text.toString())
             MainActivity.mycontactdatabase!!.myDao().addUser(new)
             Toast.makeText(this, "contact saved", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "contact saveddd", Toast.LENGTH_SHORT).show()
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
             finish()
