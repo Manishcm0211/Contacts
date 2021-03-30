@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/heading"
+            android:text="Edit Contact"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/con_name"
+            android:text="@string/tv1"
+            android:layout_below="@id/heading"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/con_num"
+            android:text="@string/tv2"
+            android:layout_below="@id/con_name"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/subheading"
+            android:text="@string/sub"
+            android:textSize="35sp"
+            android:layout_below="@+id/con_num"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cnmae"
+            android:text="@string/tv1"
+            android:layout_below="@id/subheading"
+            android:textSize="35sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et0"
+            android:layout_toEndOf="@+id/cnmae"
+            android:layout_below="@id/subheading"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cnum"
+            android:text="@string/tv2"
+            android:layout_below="@id/cnmae"
+            android:textSize="35sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et1"
+            android:layout_toEndOf="@+id/cnum"
+            android:layout_below="@id/et0"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:id="@+id/sv"
+            android:text="@string/sc"
+            android:layout_below="@+id/cnum"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
