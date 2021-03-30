@@ -36,6 +36,7 @@ class ContactDetails : AppCompatActivity() {
 
         editt.setOnClickListener{
             val itent = Intent(this,EditContact::class.java)
+            Toast.makeText(this, "contact saved", Toast.LENGTH_SHORT).show()
             itent.putExtra("posn",position)
             startActivity(itent)
             finish()
