@@ -33,11 +33,11 @@ class MainActivity : AppCompatActivity(), Adapter.OnContactItemClickListener  {
 
     }
 
-    /*fun contacts(): List<User> {
+    fun contacts(): List<User> {
         mycontactdatabase = Room.databaseBuilder<MyAppDatabase>(applicationContext,MyAppDatabase::class.java,"MyDB").allowMainThreadQueries().build()
         var contacts= mycontactdatabase!!.myDao().getUser()
         return contacts
-    }*/
+    }
 
     override fun onContactClick(position: Int) {
         val intent= Intent(this, ContactDetails::class.java)
